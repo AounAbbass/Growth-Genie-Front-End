@@ -13,6 +13,7 @@ import {
   faStar,
   faQuestionCircle,
   faCog,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { MenuIcon, XIcon } from "@heroicons/react/outline"; // Assuming XIcon is imported from Heroicons
 
@@ -64,8 +65,8 @@ export default function Home() {
           {/* Main Menu Links */}
           <div className="mt-10 w-full items-center">
             <ul className="w-full ml-7">
-              <li className="mb-4 flex items-center ">
-                <FontAwesomeIcon icon={faList} className="mr-2 size-[16px] " />
+              <li className="mb-4 flex items-center">
+                <FontAwesomeIcon icon={faList} className="mr-2 text-[16px]" />
                 <a
                   className={`text-[16px] cursor-pointer ${
                     activeLink === "PostGenerator"
@@ -77,7 +78,6 @@ export default function Home() {
                   Post Generator
                 </a>
               </li>
-          
               <li className="mb-4 flex items-center">
                 <a
                   className={`flex items-center text-[16px] cursor-pointer ${
@@ -95,8 +95,8 @@ export default function Home() {
                   </span>
                 </a>
               </li>
-              <li className="mb-4 flex items-center ">
-                <FontAwesomeIcon icon={faList} className="mr-2 size-[16px]" />
+              <li className="mb-4 flex items-center">
+                <FontAwesomeIcon icon={faList} className="mr-2 text-[16px]" />
                 <Link
                   href="/ContentInspiration"
                   className={`text-[16px] ${
@@ -118,25 +118,25 @@ export default function Home() {
               <li className="mb-4 flex items-center justify-center">
                 <FontAwesomeIcon
                   icon={faStar}
-                  className="mr-2 size-[16px] stroke-current"
+                  className="mr-2 text-[16px] stroke-current"
                 />
                 <Link href="/Upgrade" className="text-black text-[16px]">
                   Upgrade
                 </Link>
               </li>
-              <li className="mb-4 flex items-center ">
+              <li className="mb-4 flex items-center">
                 <FontAwesomeIcon
                   icon={faQuestionCircle}
-                  className="mr-2 size-[16px] stroke-current"
+                  className="mr-2 text-[16px] stroke-current"
                 />
                 <Link href="/Help" className="text-black text-[16px]">
                   Help
                 </Link>
               </li>
-              <li className="mb-4 flex items-center ">
+              <li className="mb-4 flex items-center">
                 <FontAwesomeIcon
                   icon={faCog}
-                  className="mr-2 size-[16px] stroke-current"
+                  className="mr-2 text-[16px] stroke-current"
                 />
                 <Link href="/Settings" className="text-black text-[16px]">
                   Settings
@@ -146,38 +146,31 @@ export default function Home() {
           </div>
 
           {/* User Profile */}
-          <div className="flex justify-center mt-10 pt-20">
-            <div className="flex items-center">
-              <img
-                src="path_to_your_image.jpg"
-                alt="Logo"
-                className="h-8 w-8 mr-2 pt-5"
-              />
-              <h3 className="text-[16px] font-bold pr-20">John Doe</h3>
+          <div className="flex justify-center mt-10 mr-14 pt-20">
+            <div className="flex items-start">
+              <FontAwesomeIcon icon={faUser} className="mr-2 pt-2 text-[26px]" />
+              <div>
+                <h3 className="text-[16px] font-bold">John Doe</h3>
+                <p className="text-gray-500 text-[10px]">johndoe@email.com</p>
+              </div>
             </div>
           </div>
-          {/* Email */}
-          <p className="text-gray-500 text-center pl-10 text-[10px]">
-            johndoe@email.com
-          </p>
-        </div>
 
-        {/* Close Button - Inside Navigation for Mobile */}
-        <button
-          className="fixed top-12 right-0  mr-4 md:hidden"
-          onClick={closeNavbar}
-        >
-          <XIcon className="h-6 w-6" />
-        </button>
+          {/* Close Button - Inside Navigation for Mobile */}
+          <button
+            className="fixed top-12 right-0 mr-4 md:hidden"
+            onClick={closeNavbar}
+          >
+            <XIcon className="h-6 w-6" />
+          </button>
+        </div>
       </nav>
 
       {/* Content Display */}
       {activeLink === "MyPosts" && <MyPosts />}
       {activeLink === "PostGenerator" && <PostGenerator />}
       <div className="ml-0 md:ml-0">
-        {" "}
         {/* Adjust margin left for content based on nav width */}
-        {/* Main Content */}
         <div className="flex items-center justify-between">
           {/* Hamburger Icon - Visible on Medium and Large Screens */}
           <button className="hidden md:block" onClick={toggleNavbar}>

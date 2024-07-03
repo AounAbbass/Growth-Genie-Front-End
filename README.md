@@ -1,8 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Title
+Project Genie Front-End
 
-## Getting Started
+## Description
+This project is a front-end display built using Next.js for components and styled with Tailwind CSS. 
 
-First, run the development server:
+## Features
+- **Responsive Design**: The layout adjusts to different screen sizes.
+- **Navbar**: A preselected link called `MyPosts` opens the `MyProjects.js` component.
+
+- **MyProjects Component**:
+  - Contains horizontal nav-links: `Drafts`, `Scheduled`, `Published`, `Insights`.
+  - Selecting the nav-links displays cards with `h1`, `p`, and font-icons such as `edit` and `delete`.
+  - The cards are responsive and rearrange from horizontal to vertical alignment in mobile view.
+- **Hamburger Menu**: On mobile, the left navbar turns into a hamburger icon at the top right, which, when selected, reveals a scrollable navbar.
+
+## Usage
+1. Clone the repository.
+   ```sh
+   git clone <repository-url>
+
+2. Navigate to the project directory.
+   ```sh
+   cd project-directory
+
+3. Install the Dependencies.
+   ```sh
+    npm install
+
+4. Run the development server.
+   ```sh
+   npm run dev
+
+5. Open your browser and navigate to http://localhost:3000.
 
 ```bash
 npm run dev
@@ -13,24 +42,6 @@ pnpm dev
 # or
 bun dev
 ```
+## Project ScreenShots
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Desktop View**
