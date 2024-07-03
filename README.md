@@ -1,5 +1,5 @@
 # Project Title
-Project Genie Front-End
+ProjectGenie Front-End
 
 ## Description
 This project is a front-end display built using Next.js for components and styled with Tailwind CSS. 
@@ -45,3 +45,39 @@ bun dev
 ## Project ScreenShots
 
 - **Desktop View**
+1. Main Component:
+![Screenshot 1](./Screenshots/Desktop%20Main.png)
+
+2. Drafts:
+![Screenshot 1](./Screenshots/Desktop%20Drafts.png)
+
+3. Scheduled:
+![Screenshot 1](./Screenshots/Desktop%20Scheduled.png)
+
+4. Published:
+![Screenshot 1](./Screenshots/Desktop%20Published.png)
+
+
+- **Mobile View**
+1. Responsive Navbar:
+![Screenshot 1](./Screenshots/Mobile%20Navbar.png)
+
+2. Drafts:
+![Screenshot 1](./Screenshots/Mobile%20Drafts%20Card%201.png)
+![Screenshot 2](./Screenshots/Mobile%20Drafts%20Card%202.png.png)
+
+3. Scheduled:
+![Screenshot 1](./Screenshots/Mobile%20Scheduled%201%20.png)
+![Screenshot 1](./Screenshots/Mobile%20Scheduled%202%20.png)
+![Screenshot 1](./Screenshots/Mobile%20Scheduled%203%20.png)
+
+4. Published:
+![Screenshot 1](./Screenshots/Mobile%20Published%201.png)
+![Screenshot 1](./Screenshots/Mobile%20Published%202.png)
+
+## Contact
+
+For any questions or suggestions, feel free to contact me:
+
+- **Email**: [maliccaoun@gmail.com](mailto:maliccaoun@gmail.com)
+- **LinkedIn**: [Aoun Abbass](https://www.linkedin.com/in/aounabbass6/)
